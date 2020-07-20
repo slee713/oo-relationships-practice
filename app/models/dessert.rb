@@ -1,4 +1,3 @@
-require_relative "./DessertIngredients.rb"
 
 class Dessert
     attr_reader :name

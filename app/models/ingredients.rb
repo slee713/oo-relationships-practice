@@ -1,4 +1,3 @@
-require_relative "./dessert.rb"
 
 class Ingredient
     attr_reader :name, :calories
@@ -18,6 +17,10 @@ class Ingredient
         self_dessert.map do |item|
             item.dessert
         end
+    end
+
+    def used_for(dessert)
+        DessertIngredients.new(dessert,self)
     end
 
     def bakeries
