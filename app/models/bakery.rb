@@ -13,13 +13,16 @@ class Bakery
     end
 
     def ingredients
-        bakery_ingredients = DessertIngredients.all.find_all do |dessertingredient|
-            dessertingredient.dessert.bakery == self
-        end
-        bakery_ingredients.map do |dessert_ingredient|
-            dessert_ingredient.ingredient
-        end
         
+        all_uniq_ingredients = []
+        self.desserts.each do |dessert|
+            dessert.ingredients.each do |ingredient|
+                if !all_uniq_ingredients.include?(ingredient)
+                    all_uniq_ingredients << ingredient
+                end
+            end
+        end
+        all_uniq_ingredients
     end
 
     def desserts

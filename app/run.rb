@@ -26,7 +26,7 @@ cheese = Ingredient.new("cheese", 1000)
 chocolate_mousse = Ingredient.new("Chocolate mousse", 200)
 apples = Ingredient.new("Apples", 400)
 
-choc_cookie.new_dessert_ingredient(chocolate)
+choc_cookie.new_dessert_ingredient(chocolate) # DessertIngredients.all === [(choc_cooke object, chocolate ingredient object)]
 choc_cookie.new_dessert_ingredient(flour)
 choc_cookie.new_dessert_ingredient(sugar)
 
@@ -47,7 +47,7 @@ apple_pie.bakery = moms_bakery
 # print moms_bakery.desserts 
 # print moms_bakery.average_calories
 # print Bakery.all
-# print moms_bakery.shopping_list
+puts moms_bakery.shopping_list
 
 
 # print choc_cookie.ingredients
@@ -58,5 +58,5 @@ apple_pie.bakery = moms_bakery
 
 # print flour.dessert
 # print flour.bakeries
-# print flour.calories
-print Ingredient.all
+# # print flour.calories
+# print Ingredient.all
