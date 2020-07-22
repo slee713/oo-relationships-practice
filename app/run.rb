@@ -47,7 +47,7 @@ apple_pie.bakery = moms_bakery
 # print moms_bakery.desserts 
 # print moms_bakery.average_calories
 # print Bakery.all
-puts moms_bakery.shopping_list
+# puts moms_bakery.shopping_list
 
 
 # print choc_cookie.ingredients
