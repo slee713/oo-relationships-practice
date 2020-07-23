@@ -32,4 +32,4 @@ faye.ride_with_passenger(steven, 824.5)
 # print Driver.all
 # print Driver.mileage_cap(20)
 
-print Ride.average_distance
+# print Ride.average_distance
