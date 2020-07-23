@@ -1,8 +1,8 @@
-require 'pry'
-require_relative "./models/bakery.rb"
-require_relative "./models/DessertIngredients.rb"
-require_relative "./models/dessert.rb"
-require_relative "./models/ingredients.rb"
+require_relative '../config/environment.rb'
+
+def reload
+  load 'config/environment.rb'
+end
 
 
 moms_bakery = Bakery.new("Mom's Bakery")
